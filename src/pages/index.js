@@ -6,6 +6,7 @@ import {
   AiOutlineShoppingCart,
   AiOutlineHeart,
   AiOutlineUser,
+  AiOutlineSearch,
 } from "react-icons/ai";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,18 +29,18 @@ export default function Home() {
 
           {/* Search Bar */}
           <form className="form-inline my-2 my-lg-0">
-            <div className="d-flex">
+            <div className="d-flex bg-light p-2 rounded-pill">
               <input
-                className="form-control mr-sm-2"
+                className="form-control outline-none mr-sm-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
               <button
-                className="btn btn-outline-success my-2 my-sm-0"
+                className="btn btn-light w-5 my-2 my-sm-0 rounded-pill"
                 type="submit"
               >
-                Search
+                <AiOutlineSearch className="w" />
               </button>
             </div>
           </form>
